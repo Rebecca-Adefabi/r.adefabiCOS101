@@ -6,5 +6,6 @@ fn main(){
 	// simple interest
 	let si = p * (r/100.0) * t;
     
-    print!("Simple interest = {}", si);	
+    print!("Simple interest = {}",
+     si);	
 }
