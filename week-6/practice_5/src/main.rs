@@ -8,5 +8,7 @@ fn main() {
     println!();
     println!("After trim ");
     println!("length is {}", fullname.trim().len());
+    let emoji = "😂😂";
+    println!("lenght of {} is {}", emoji, emoji.len());
 
 }
