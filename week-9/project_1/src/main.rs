@@ -1,8 +1,19 @@
-use std::io::Read;
+use std::io::Write;
 
 fn main(){
-    let mut file = std::fs::File::open("Nigerian_breweries.csv").expect("failed to open");
-    let mut contents = String::new();
-    file.read_to_string(&mut contents).expect("failed to read");
-    print!("{}", contents);
+
+    let announce = "Nigerian breweries\n";
+    let product = "Lager,Stout,Non-alcoholic
+33 Export,Legend,Maltina
+Desperados,Turbo King,Amstel Malta
+Goldberg,Williams,Malta Gold
+Gulder,,Fayrouz 
+Heineken,, 
+Star,,";
+    
+
+    let mut file = std::fs::File::create("Nigerianbreweries.csv").expect("failed to create");
+    file.write_all(announce.as_bytes()).expect("Write failed");
+    file.write_all(product.as_bytes()).expect("failed to read");
+    println!("Data written to file.");
 }
