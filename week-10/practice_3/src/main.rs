@@ -4,7 +4,7 @@ fn main() {
 
     let v2 = v;
     let v2_return = display(v2);
-    println!("In main {:?}",v);
+    println!("In main {:?}",v2_return);
 
 }
 fn display(v:Vec<i32>)->Vec<i32> {

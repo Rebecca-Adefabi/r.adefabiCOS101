@@ -10,5 +10,5 @@ fn main() {
     //Rust is very smart in terms of mmemory access, so it detects a race condiion
     //as two variables point to same heap
 
-    println!("{:?}",v);
+    println!("{:?}",v2);
 }

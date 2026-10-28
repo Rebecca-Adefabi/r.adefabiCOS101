@@ -19,7 +19,7 @@ fn main() {
         brand:String::from("HP"), price:650_000,quantity:3
     };
     let laptop2 = Laptop{
-        brand:String::from("IBM"), price:750_000,quantity:3
+        brand:String::from("IBM"), price:755_000,quantity:3
     };
     let laptop3 =Laptop{
         brand:String::from("Toshiba"), price:550_000, quantity:3
